@@ -50,5 +50,5 @@ jobs:
         with:
           app-name: muqeem  # Use the project name from the Solution file
           slot-name: 'Production'
-          package: ./publish
+          package: .\MuqeemApi\MuqeemApi\publish
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_99114192EEB8487EB03DCD61D7E7671F }}
