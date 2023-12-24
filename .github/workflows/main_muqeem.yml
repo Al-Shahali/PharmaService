@@ -23,7 +23,7 @@ jobs:
         run: dotnet build --configuration Release
 
       - name: Dotnet publish
-        run: dotnet publish -c Release -o ./publish/MuqeemApi MuqeemApi/MuqeemApi.csproj
+        run: dotnet publish -c Release -o ./publish/MuqeemApi.csproj
 
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v2
@@ -50,5 +50,5 @@ jobs:
         with:
           app-name: muqeem  # Use the project name from the Solution file
           slot-name: 'Production'
-          package: .\MuqeemApi\publish
+          package: .\publish
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_99114192EEB8487EB03DCD61D7E7671F }}
