@@ -23,7 +23,7 @@ jobs:
         run: dotnet build --configuration Release
 
       - name: Dotnet publish
-        run: dotnet publish -c Release -o ./publish/MuqeemApi.csproj
+        run: dotnet publish -c Release -o ./publish/MuqeemApi MuqeemApi/MuqeemApi.csproj
 
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v2
