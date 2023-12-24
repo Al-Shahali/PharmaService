@@ -1,0 +1,6 @@
+@MuqeemApi_HostAddress = http://localhost:5074
+
+GET {{MuqeemApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
